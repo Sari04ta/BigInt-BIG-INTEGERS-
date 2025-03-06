@@ -1,19 +1,15 @@
 # BigInt-BIG-INTEGERS-Arbitrary Precision Integer Library
 ## Overview
 **BigInt** is a custom data type designed to handle large integers that exceed the storage capacity of primitive data types like `long long int` in C/C++. This implementation allows performing various arithmetic and mathematical operations on arbitrarily large integers.
+## Features
+- Supports large integer arithmetic (Addition, Subtraction, Multiplication, Division, Modulo)
+- Exponentiation and Square Root operations
+- Comparison between two BigInt numbers
+- Conversion from standard integer types to BigInt
+- Digit counting and printing functionalities
+- Pre/Post Incrementation and Decrementation
+- Efficient algorithms for factorial, Fibonacci, and Catalan number calculations
 
-Add two big integers.
-Subtract two big integers
-Multiply two big integers.
-Divide two big integers.
-Modulo two big integers
-Raise a big integer to a power
-The square root of a big integer
-Comparison between two big integers to check which is greater and which is smaller.
-Find the number of digits in the big integer.
-Print the big integer.
-Convert an integer to a big integer.
-Applications Of BigInt:
 Below are some basic applications of the new data type, BigInt:
 
 Calculating the Fibonacci number of a large number.
@@ -47,14 +43,7 @@ Checking which big integer is greater and which is smaller.
 
 
 
-## Features
-- Supports large integer arithmetic (Addition, Subtraction, Multiplication, Division, Modulo)
-- Exponentiation and Square Root operations
-- Comparison between two BigInt numbers
-- Conversion from standard integer types to BigInt
-- Digit counting and printing functionalities
-- Pre/Post Incrementation and Decrementation
-- Efficient algorithms for factorial, Fibonacci, and Catalan number calculations
+
 
 ## Applications
 BigInt can be used in:
