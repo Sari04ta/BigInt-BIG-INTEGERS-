@@ -1,4 +1,4 @@
-# BigInt-BIG-INTEGERS
+# BigInt-BIG-INTEGERS-Arbitrary Precision Integer Library
 In C/C++ the number of digits a long long int can have is a maximum of 20. And the question is to store the 22 digit number which is not easy to store in any kind of primitive type. So to deal with this type of problem let’s design a new data type which is going to be called BigInt In this article, a few basic operations are being implemented on the new data type.
 
 Add two big integers.
@@ -40,3 +40,98 @@ Calculating Fibonacci up to 10 000. (even 100000 but slower)
 Calculating Factorial up to 1 000.
 Calculating Catalan up to 1 000.
 Checking which big integer is greater and which is smaller.
+
+
+
+
+## Overview
+**BigInt** is a custom data type designed to handle large integers that exceed the storage capacity of primitive data types like `long long int` in C/C++. This implementation allows performing various arithmetic and mathematical operations on arbitrarily large integers.
+
+## Features
+- Supports large integer arithmetic (Addition, Subtraction, Multiplication, Division, Modulo)
+- Exponentiation and Square Root operations
+- Comparison between two BigInt numbers
+- Conversion from standard integer types to BigInt
+- Digit counting and printing functionalities
+- Pre/Post Incrementation and Decrementation
+- Efficient algorithms for factorial, Fibonacci, and Catalan number calculations
+
+## Applications
+BigInt can be used in:
+- **Computational Mathematics**: Solving problems requiring large number arithmetic.
+- **Cryptography**: Handling large numbers for encryption and decryption algorithms.
+- **Scientific Computing**: Simulating large numerical computations.
+- **Combinatorics**: Computing large factorials and Fibonacci numbers.
+
+## Approach
+- Uses **C++ strings** to store numbers as characters in reverse order for efficient computation.
+- Addition and subtraction use digit-wise operations with carry handling.
+- Multiplication follows basic mathematical principles for multi-digit numbers.
+- Efficient division and modulo operations.
+- Implements optimized algorithms for power calculations and square root.
+- Provides operator overloading for seamless arithmetic operations.
+
+## Supported Operations
+- **Arithmetic Operations**:
+  - Addition (`+`)
+  - Subtraction (`-`)
+  - Multiplication (`*`)
+  - Division (`/`)
+  - Modulo (`%`)
+- **Mathematical Functions**:
+  - Power (`^`)
+  - Square Root (`sqrt()`)
+- **Comparison Operators**:
+  - Greater than (`>`)
+  - Less than (`<`)
+  - Equal to (`==`)
+- **Utility Functions**:
+  - Convert integer to BigInt
+  - Find number of digits
+  - Print the BigInt
+- **Advanced Computations**:
+  - Factorial calculation
+  - Fibonacci sequence computation
+  - Catalan number computation
+
+## Usage Example
+```cpp
+#include "BigInt.h"
+#include <iostream>
+
+int main() {
+    BigInt a = "123456789123456789";
+    BigInt b = "987654321987654321";
+    
+    BigInt sum = a + b;
+    BigInt product = a * b;
+    
+    std::cout << "Sum: " << sum << std::endl;
+    std::cout << "Product: " << product << std::endl;
+    
+    return 0;
+}
+```
+
+## Installation & Compilation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/BigInt.git
+   ```
+2. Include `BigInt.h` and `BigInt.cpp` in your project.
+3. Compile using a C++ compiler:
+   ```sh
+   g++ main.cpp BigInt.cpp -o bigint
+   ```
+4. Run the program:
+   ```sh
+   ./bigint
+   ```
+
+## Contributing
+Feel free to contribute by improving the implementation or adding new features! Fork the repository and submit a pull request with your changes.
+
+## License
+This project is open-source and available under the **MIT License**.
+
+
