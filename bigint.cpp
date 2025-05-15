@@ -510,5 +510,6 @@ int main()
         cout << fact << '\n';
     }
   //
-   
+ //thi 
+ 
 }
